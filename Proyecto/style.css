@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+.bus {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    transition: left 1s ease-in-out; /* Animación más suave y larga para el movimiento */
+    border-radius: 10px;
+    background-image: url('https://img.icons8.com/clouds/100/bus.png'); /* Imagen de bus */
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+#bus {
+    left: 0; /* Inicialmente en la posición 0 */
+    bottom: 50px; /* Posición más alta */
+}
+.container {
+    position: relative;
+    height: 250px; /* Altura del contenedor */
+    border: 2px solid #00bfff;
+    margin: 20px auto;
+    width: 90%; /* Ancho del contenedor */
+    background-color: #e0f7ff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+.meta {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 70px); /* Posición de la meta en el lado derecho */
+    width: 20px;
+    height: 246px; /* Asegurar que cubre toda la altura */
+    background: linear-gradient(to bottom, black 50%, white 50%);
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+}
+.contenido {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.resultado {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    width: 60%; /* Ajustar el ancho */
+    box-sizing: border-box;
+}
+.resultado p {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.correcto {
+    color: green;
+    background-color: #e0ffe0;
+}
+.incorrecto {
+    color: red;
+    background-color: #ffe0e0;
+}
+#mensajeFinal {
+    margin-top: 20px;
+    font-weight: bold;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.reglas {
+    background-color: #ffebcd;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Ajustar el ancho */
+    box-sizing: border-box;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif; /* Tipo de letra más redonda */
+    line-height: 1.5; /* Ajustar interlineado */
+}

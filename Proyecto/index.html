@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Matemáticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Juego de Matemáticas</h1>
+    <div class="container">
+        <div id="bus" class="bus"></div>
+        <div class="meta"></div> <!-- Meta con banderas de carreras -->
+    </div>
+    <div class="contenido">
+        <div class="resultado" id="listaOperaciones"></div>
+        <div class="reglas">
+            <h2>Reglas del Juego</h2>
+            <ul>
+                <li>Responde correctamente a cada operación matemática.</li>
+                <li>El bus avanzará con cada respuesta correcta.</li>
+                <li>Para llegar a la meta, debes responder todas las preguntas correctamente.</li>
+                <li>Las respuestas con decimales deben tener solo un decimal.</li>
+            </ul>
+        </div>
+    </div>
+    <div id="mensajeFinal"></div>
+    <script src="script.js"></script>
+</body>
+</html>
